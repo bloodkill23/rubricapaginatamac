@@ -10,6 +10,7 @@ import { ErrorMessagePageComponent } from './error-message-page/error-message-pa
 import { LoginPageComponent } from './login-page/login-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { SearchPageComponent } from './search-page/search-page.component';
+import { SceltaComponent } from './scelta/scelta.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SearchPageComponent } from './search-page/search-page.component';
     ErrorMessagePageComponent,
     LoginPageComponent,
     MainPageComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    SceltaComponent
   ],
   imports: [
     BrowserModule,
