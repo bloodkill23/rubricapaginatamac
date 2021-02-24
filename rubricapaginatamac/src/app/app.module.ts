@@ -14,6 +14,7 @@ import { SceltaComponent } from './scelta/scelta.component';
 
 @NgModule({
   declarations: [
+    //la madre morta di qualcuno
     AppComponent,
     CountPageComponent,
     ErrorMessagePageComponent,
