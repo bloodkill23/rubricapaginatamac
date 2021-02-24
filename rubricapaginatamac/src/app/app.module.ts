@@ -12,10 +12,10 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { SceltaComponent } from './scelta/scelta.component';
 import { FormPanelComponent } from './form-panel/form-panel.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    //la madre morta di qualcuno
     AppComponent,
     CountPageComponent,
     ErrorMessagePageComponent,
@@ -27,7 +27,8 @@ import { FormPanelComponent } from './form-panel/form-panel.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-page',
@@ -7,9 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  nome: string = "";
+  cognome: string = "";
+  telefono: string = "";
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  add() {
+
+
+  }
+
+  conta() {
+    this.router.navigateByUrl("/CountPage");
+
+  }
+
+  ricerca() {
+
+    this.router.navigateByUrl("/SearchPage");
+
   }
 
 }

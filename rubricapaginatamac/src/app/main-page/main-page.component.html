@@ -1,26 +1,59 @@
 <h1> Sei nella pagina principale della rubrica: che vuoi fare?</h1>
-<form action="http://localhost:4200/CountPage">
-    <button type="submit">
-      Visita CountPage
-    </button>  
-  </form>
-  <br>
-  <form action="http://localhost:4200/SearchPage">
-    <button type="submit">
-      Visita SearchPage
-    </button>  
-  </form>
-  <br>
-  <form action="http://localhost:4200/MainPage">
-    <button type="submit">
-      cancella rubrica 
-    </button>  
-  </form>
-  <br>
-  
-  <form action="http://localhost:4200/MainPage">
-    <button type="submit">
-      aggiungi a rubrica
-    </button>  
-  </form>
-
+Nome
+<input type="text" [ngModel]="nome">
+Cognome
+<input type="text" [ngModel]="cognome">
+Telefono
+<input type="text" [ngModel]="telefono">
+<br>
+<br>
+<br>
+<button (click)="add()">Aggiungi</button>
+<button (click)="conta()">Conta</button>
+<button (click)="ricerca()">Ricerca</button>
+<br>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th>nome</th>
+      <th>Cognome</th>
+      <th>Telefono</th>
+      <th>Gestisci</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>null</td>
+      <td>null</td>
+      <td>null</td>
+      <td>
+        <button>X</button>
+      </td>
+    </tr>
+    <tr>
+      <td>null</td>
+      <td>null</td>
+      <td>null</td>
+      <button>X</button>
+    </tr>
+    <tr>
+      <td>null</td>
+      <td>null</td>
+      <td>null</td>
+      <button>X</button>
+    </tr>
+    <tr>
+      <td>null</td>
+      <td>null</td>
+      <td>null</td>
+      <button>X</button>
+    </tr>
+    <tr>
+      <td>null</td>
+      <td>null</td>
+      <td>null</td>
+      <button>X</button>
+    </tr>
+  </tbody>
+</table>
