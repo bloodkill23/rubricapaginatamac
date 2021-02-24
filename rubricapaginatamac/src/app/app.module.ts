@@ -11,6 +11,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { SceltaComponent } from './scelta/scelta.component';
+import { FormPanelComponent } from './form-panel/form-panel.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SceltaComponent } from './scelta/scelta.component';
     LoginPageComponent,
     MainPageComponent,
     SearchPageComponent,
-    SceltaComponent
+    SceltaComponent,
+    FormPanelComponent
   ],
   imports: [
     BrowserModule,
