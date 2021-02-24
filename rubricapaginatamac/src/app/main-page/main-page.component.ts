@@ -8,28 +8,25 @@ import { Router } from '@angular/router';
 })
 export class MainPageComponent implements OnInit {
 
-  nome: string = "";
-  cognome: string = "";
-  telefono: string = "";
+
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  add() {
-
-
-  }
-
-  conta() {
-    this.router.navigateByUrl("/CountPage");
-
-  }
-
-  ricerca() {
+  VaiAllaPaginaRicerca(s: string) {
 
     this.router.navigateByUrl("/SearchPage");
+
+    console.log(s);
+
+  }
+
+  VaiAllaPaginaConta(n: string) {
+
+    this.router.navigateByUrl("/CountPage");
+    console.log(n);
 
   }
 

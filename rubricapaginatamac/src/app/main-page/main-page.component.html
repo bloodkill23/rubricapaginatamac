@@ -1,16 +1,5 @@
 <h1> Sei nella pagina principale della rubrica: che vuoi fare?</h1>
-Nome
-<input type="text" [ngModel]="nome">
-Cognome
-<input type="text" [ngModel]="cognome">
-Telefono
-<input type="text" [ngModel]="telefono">
-<br>
-<br>
-<br>
-<button (click)="add()">Aggiungi</button>
-<button (click)="conta()">Conta</button>
-<button (click)="ricerca()">Ricerca</button>
+<app-form-panel (eventoConta) ="VaiAllaPaginaConta($event)" (eventoRicerca)="VaiAllaPaginaRicerca($event)"> </app-form-panel>
 <br>
 <br>
 <table>
