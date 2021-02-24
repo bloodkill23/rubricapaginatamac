@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'SearchPage', component: SearchPageComponent },
   { path: 'CountPage', component: CountPageComponent },
   {path:'scelta', component: SceltaComponent},
-  { path: '', redirectTo: '/LoginPage', pathMatch: 'full' },
+  { path: '', redirectTo: '/MainPage', pathMatch: 'full' },
 
 ];
 
