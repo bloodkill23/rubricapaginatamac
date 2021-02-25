@@ -1,8 +1,9 @@
 <h1> Sei nella pagina principale della rubrica: che vuoi fare?</h1>
 <app-form-panel (eventoConta) ="VaiAllaPaginaConta($event)" (eventoRicerca)="VaiAllaPaginaRicerca($event)"> </app-form-panel>
+<input type="text" [(ngModel)] ='contatto'>
 <br>
 <br>
-<table>
+<table *ngFor let x of med.contatti>
   <thead>
     <tr>
       <th>nome</th>

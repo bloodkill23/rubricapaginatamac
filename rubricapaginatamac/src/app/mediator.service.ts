@@ -5,7 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class MediatorService {
 
-  contatti: string []=[];
+  username: string = "";
+
+
+  contatti: string[] = [];
 
   constructor() { }
 }
