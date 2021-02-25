@@ -33,7 +33,7 @@ export class MainPageComponent implements OnInit {
 
   aggiungi() {
     this.med.contatti.push(this.contatto);
-    ;
+    
   }
   conta() {
     this.router.navigateByUrl("/CountPage");
