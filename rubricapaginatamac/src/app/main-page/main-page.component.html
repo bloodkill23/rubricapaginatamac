@@ -4,9 +4,9 @@
 Nome
 <input type="text" [(ngModel)]="contatto.nome">
 Cognome
-<input type="text" [ngModel]="contatto.cognome">
+<input type="text" [(ngModel)]="contatto.cognome">
 Telefono
-<input type="text" [ngModel]="contatto.telefono">
+<input type="text" [(ngModel)]="contatto.telefono">
 <br>
 <br>
 <button (click)="aggiungi()">Aggiungi</button>
@@ -14,11 +14,11 @@ Telefono
 <button (click)="conta()">Conta</button>
 <br>
 <table>
-  <tr *ngFor ="let x of med.contatti">
+  <tr *ngFor="let x of med.contatti">
     <td>{{x.nome}}</td>
 
     <td>{{x.cognome}}</td>
-   
+
     <td>{{x.telefono}}</td>
 
   </tr>
