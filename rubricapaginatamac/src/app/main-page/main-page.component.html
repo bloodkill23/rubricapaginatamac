@@ -1,49 +1,11 @@
 <h1> Sei nella pagina principale della rubrica: che vuoi fare?</h1>
 <app-form-panel (eventoConta) ="VaiAllaPaginaConta($event)" (eventoRicerca)="VaiAllaPaginaRicerca($event)"> </app-form-panel>
 <input type="text" [(ngModel)] ='contatto'>
+<button (click) ="aggiungi()">Aggiungi</button>
+<button (click) ="conta()">Conta</button>
 <br>
-<br>
-<table *ngFor let x of med.contatti>
-  <thead>
-    <tr>
-      <th>nome</th>
-      <th>Cognome</th>
-      <th>Telefono</th>
-      <th>Gestisci</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>null</td>
-      <td>null</td>
-      <td>null</td>
-      <td>
-        <button>X</button>
-      </td>
-    </tr>
-    <tr>
-      <td>null</td>
-      <td>null</td>
-      <td>null</td>
-      <button>X</button>
-    </tr>
-    <tr>
-      <td>null</td>
-      <td>null</td>
-      <td>null</td>
-      <button>X</button>
-    </tr>
-    <tr>
-      <td>null</td>
-      <td>null</td>
-      <td>null</td>
-      <button>X</button>
-    </tr>
-    <tr>
-      <td>null</td>
-      <td>null</td>
-      <td>null</td>
-      <button>X</button>
-    </tr>
-  </tbody>
-</table>
+<ol>
+  <li *ngFor= "let x of med.contatti">
+  {{x}}
+  </li>
+</ol>
