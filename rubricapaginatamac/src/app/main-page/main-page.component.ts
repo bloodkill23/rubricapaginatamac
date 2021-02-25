@@ -9,7 +9,7 @@ import { MediatorService } from '../mediator.service';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent implements OnInit {
-  contatto= new Contatto();
+  contatto = new Contatto();
 
   constructor(private router: Router, public med: MediatorService) { }
 
@@ -33,7 +33,7 @@ export class MainPageComponent implements OnInit {
 
   aggiungi() {
     this.med.contatti.push(this.contatto);
-    
+
   }
   conta() {
     this.router.navigateByUrl("/CountPage");
