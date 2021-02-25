@@ -11,7 +11,7 @@ export class MainPageComponent implements OnInit {
   contatto:string="";
 
 
-  constructor(private router: Router,private med:MediatorService) { }
+  constructor(private router: Router,public med:MediatorService) { }
 
   ngOnInit(): void {
   }
