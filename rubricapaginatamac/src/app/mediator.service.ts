@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
+import { Contatto } from './contatto';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MediatorService {
 
-  username: string = "";
+  //username: string = "";
 
 
-  contatti: string[] = [];
+  contatti: Contatto[] = [];
 
   constructor() { }
 }
